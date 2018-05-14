@@ -1,8 +1,8 @@
 // Using Eric meyers style reset to remove default browser styling
 // for a uniform cross-browser experience
 /* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -18,35 +18,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 
@@ -54,13 +54,28 @@ table {
 
 // My styles starts here
 body{
-  background: linear-gradient(to right, #1e130c,#9a8478);
-    // background: repeating-linear-gradient(-45deg, #abbaab, #abbaab 100px, #ccc 100px, #ccc 30px);
+  color: black;
+  // background: linear-gradient(to right, #fe8c00,#f83600);
+  background-color: violet;
+  // background: repeating-linear-gradient(-45deg, #abbaab, #abbaab 100px, #ccc 100px, #ccc 30px);
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: grid;
-  grid-template-columns: 70px 1fr;
-  grid-template-rows: auto auto auto auto auto 100px;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: auto auto auto auto auto 30px;
+  grid-gap: 20px;
+  animation-name: backgroundTransition;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+@keyframes backgroundTransition{
+  0%{background-color: violet;}
+  25%{background-color:indigo;}
+  50%{background-color:blue;}
+  75%{background-color:green;}
+  100%{background-color:yellow;}
 }
 
 // Centering and sizing all heading elements
@@ -72,37 +87,60 @@ h1{
 // Giving padding and background images
 .mainHeading{
   p{
-    padding: 20px;
+    padding: 30px;
     font-size: 20px;
   }
 }
 
+#mainHeading{
+
+}
+@keyframes slideshow{
+  background:url("");
+}
 
 // Styling for navbar goes here
 .navBar{
   grid-row:1/7; //Always update to end at the last row
   ul{
-    height: 200px;
+    height: 400px;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-columns:100px;
+    grid-template-rows: auto auto auto auto;
+    position: sticky;
+    top:0;
+    overflow: hidden;
+    z-index: 10;
     li{
-
+      margin: 0 auto;
       a{
         text-decoration: none;
         color: white;
         text-align: center;
-
-padding: 12px 0;
-  padding-top: 12px;
+        padding: 10px 20px;
+        background-color: #000;
         border: 1px solid black;
+        width: 100px;
       }
     }
   }
 }
 
 
-
+.btn-secondary{
+  border: none;
+  padding:10px 10px;
+  background-color: #000;
+  color: #fff;
+  margin-top:10px;
+  border-radius:0;
+}
+dropdown-menu a{
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  width: 100px;
+}
 
 
 
@@ -110,10 +148,11 @@ padding: 12px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
+  padding: 20px;
   img{
     max-width: 100%;
-     height: auto;
-     border-radius: 12px;
+    height: auto;
+    border-radius: 12px;
   }
   a{
     text-decoration: none;
@@ -127,10 +166,42 @@ padding: 12px 0;
   }
 }
 
-
-
+// Styling for all subsections
+.subsection{
+  display: grid;
+  grid-template-columns: 500px 500px;
+  grid-template-rows: 1fr 1fr;
+  // margin-right: 10%;
+}
+.subsection figure img{
+  width: 80%;
+}
+.subsection figure figcaption{
+  padding: 20px 100px 20px 0px;
+}
 footer{
   color: white;
   background-color: black;
+  grid-row: 6/7;
   grid-column: 2/3;
+  text-align: center;
+  padding: 5px;
+  position: sticky;
+  bottom: 0;
+  border-radius: 10px 10px 0 0;
+}
+
+// Responsive for desktop
+@media screen and (min-width:1600px){
+  body{
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+// Responsive for tabs
+@media screen and (min-width:980px){
+  body{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
