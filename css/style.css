@@ -2,6 +2,7 @@
 v2.0 | 20110126
 License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -51,13 +52,15 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: grid;
-  grid-template-columns: 100px 1fr;
+  grid-template-columns: 120px 1fr;
   grid-template-rows: auto auto auto auto auto 30px;
   grid-gap: 20px;
   animation-name: backgroundTransition;
   animation-duration: 20s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in; }
+  animation-timing-function: ease-in;
+  font-size: 50px;
+  font-family: 'Raleway', sans-serif; }
 
 @keyframes backgroundTransition {
   0% {
@@ -72,11 +75,11 @@ body {
     background-color: yellow; } }
 h1 {
   text-align: center;
-  font-size: 35px; }
+  font-size: 50px; }
 
 .mainHeading p {
   padding: 30px;
-  font-size: 20px; }
+  font-size: 40px; }
 
 @keyframes slideshow {
   background: url(""); }
@@ -94,10 +97,11 @@ h1 {
     .navBar ul li {
       margin: 0 auto; }
       .navBar ul li a {
+        font-size: 20px;
         text-decoration: none;
         color: white;
         text-align: center;
-        padding: 10px 20px;
+        padding: 10px 30px;
         background-color: #000;
         border: 1px solid black;
         width: 100px; }
@@ -107,14 +111,15 @@ h1 {
   padding: 10px 10px;
   background-color: #000;
   color: #fff;
-  margin-top: 10px;
-  border-radius: 0; }
+  margin-top: 15px;
+  border-radius: 0;
+  font-size: 20px; }
 
 dropdown-menu a {
+  padding: 10px 10px;
   text-align: left;
-  padding: 0;
   margin: 0;
-  width: 100px; }
+  width: 130px; }
 
 .activityLinks {
   display: grid;
@@ -130,7 +135,8 @@ dropdown-menu a {
     padding: 10px; }
     .activityLinks a figure figcaption {
       text-align: center;
-      color: white; }
+      color: white;
+      font-size: 30px; }
 
 .subsection {
   display: grid;
@@ -141,7 +147,8 @@ dropdown-menu a {
   width: 80%; }
 
 .subsection figure figcaption {
-  padding: 20px 100px 20px 0px; }
+  padding: 20px 100px 20px 0px;
+  font-size: 30px; }
 
 footer {
   color: white;
@@ -149,10 +156,11 @@ footer {
   grid-row: 6/7;
   grid-column: 2/3;
   text-align: center;
-  padding: 5px;
+  padding: 10px;
   position: sticky;
   bottom: 0;
-  border-radius: 10px 10px 0 0; }
+  border-radius: 10px 10px 0 0;
+  font-size: 20px; }
 
 @media screen and (min-width: 1600px) {
   body {
