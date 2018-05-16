@@ -1,0 +1,56 @@
+form {
+  display: grid;
+  grid-template-rows: repeat(6, 50px);
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "name surname" "email email" "category category" "comments comments" "comments comments" "button button";
+  grid-gap: 10px; }
+
+h1 {
+  text-align: center; }
+
+form input, select, textarea, button {
+  border-radius: 12px;
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid blue; }
+
+form input:focus, select:focus, textarea:focus, button:focus {
+  outline: none;
+  border-color: red; }
+
+#name {
+  grid-area: name; }
+
+#surname {
+  grid-area: surname; }
+
+#email {
+  grid-area: email; }
+
+#category {
+  grid-area: category; }
+
+#comments {
+  grid-area: comments; }
+
+#submit {
+  grid-area: button;
+  background: linear-gradient(to right, #3333cc, #000066);
+  color: white;
+  border: none; }
+
+#submit:hover {
+  grid-area: button;
+  background: linear-gradient(to right, #000066, #3333cc); }
+
+@media screen and (min-width: 650px) {
+  body {
+    margin: 0 10%; } }
+@media screen and (min-width: 900px) {
+  body {
+    margin: 0 20%; } }
+@media screen and (min-width: 1300px) {
+  body {
+    margin: 0 30%; } }
+
+/*# sourceMappingURL=Contact.css.map */
