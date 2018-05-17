@@ -71,7 +71,9 @@ h1 {
   animation-duration: 30s;
   animation-iteration-count: infinite;
   filter: contrast(120%);
-  animation-timing-function: linear; }
+  animation-timing-function: linear;
+  padding: 20px;
+  margin: 20px 0; }
 
 @keyframes slideShow {
   0% {
@@ -149,7 +151,7 @@ h1 {
   position: sticky;
   top: 0;
   overflow: hidden;
-  z-index: 10;
+  z-index: 100;
   padding: 0;
   display: grid;
   grid-template-columns: 1fr;
@@ -169,7 +171,7 @@ h1 {
 
 figure img {
   border-radius: 12px;
-  width: 100%; }
+  width: 90%; }
 figure img:hover {
   filter: brightness(80%); }
 
@@ -220,6 +222,7 @@ footer {
     grid-template-columns: auto auto auto auto auto;
     grid-template-rows: 50px;
     list-style-type: none;
+    z-index: 11;
     margin: 0;
     padding: 0; }
 
@@ -240,7 +243,6 @@ footer {
     position: sticky;
     top: 0;
     overflow: hidden;
-    z-index: 10;
     grid-column: 4/5;
     grid-row: 2/9; }
 
@@ -248,11 +250,18 @@ footer {
     grid-column: 1/5; }
 
   .campingSection, .fishingSection, .hikingSection, .climbingSection {
-    border: 1px solid black;
     grid-column: 1/4; }
+    .campingSection img, .fishingSection img, .hikingSection img, .climbingSection img {
+      margin: 30px; }
     .campingSection h1, .fishingSection h1, .hikingSection h1, .climbingSection h1 {
       margin-top: 60px; }
     .campingSection p, .fishingSection p, .hikingSection p, .climbingSection p {
-      padding: 20px; } }
+      border: 1px solid black;
+      padding: 50px;
+      font-size: 20px; } }
+.subsection figure figcaption p {
+  border: 1px solid black;
+  padding: 50px;
+  font-size: 20px; }
 
 /*# sourceMappingURL=style.css.map */

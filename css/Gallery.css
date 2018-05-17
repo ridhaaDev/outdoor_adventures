@@ -14,4 +14,30 @@ figure {
 figure img {
   width: 100%; }
 
+a img:hover {
+  filter: brightness(80%);
+  animation-name: rotate;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  /*    animation-delay: 1s;*/
+  animation-timing-function: ease-in; }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(45deg); }
+  12.5% {
+    transform: rotate(90deg); }
+  25% {
+    transform: rotate(135deg); }
+  37.5% {
+    transform: rotate(180deg); }
+  50% {
+    transform: rotate(225deg); }
+  62.5% {
+    transform: rotate(270deg); }
+  75% {
+    transform: rotate(315deg); }
+  100% {
+    transform: rotate(360deg); } }
+
 /*# sourceMappingURL=Gallery.css.map */
