@@ -1,146 +1,200 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/*
-    Created on : May 15, 2018, 8:41:37 PM
-    Author     : FUJITSU
-*/
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-// Using Eric meyers style reset to remove default browser styling
-// for a uniform cross-browser experience
-/* http://meyerweb.com/eric/tools/css/reset/
-v2.0 | 20110126
-License: none (public domain)
-*/
 //
-// html,body, div, span, applet, object, iframe,
-// h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-// a, abbr, acronym, address, big, cite, code,
-// del, dfn, em, img, ins, kbd, q, s, samp,
-// small, strike, strong, sub, sup, tt, var,
-// b, u, i, center,
-// dl, dt, dd, ol, ul, li,
-// fieldset, form, label, legend,
-// table, caption, tbody, tfoot, thead, tr, th, td,
-// article, aside, canvas, details, embed,
-// figure, figcaption, footer, header, hgroup,
-// menu, nav, output, ruby, section, summary,
-// time, mark, audio, video {
-//   margin: 0;
-//   padding: 0;
-//   border: 0;
-//   font-size: 100%;
-//   font: inherit;
-//   vertical-align: baseline;
-// }
-// /* HTML5 display-role reset for older browsers */
-// article, aside, details, figcaption, figure,
-// footer, header, hgroup, menu, nav, section {
-//   display: block;
-// }
-// body {
-//   line-height: 1;
-// }
-// ol, ul {
-//   list-style: none;
-// }
-// blockquote, q {
-//   quotes: none;
-// }
-// blockquote:before, blockquote:after,
-// q:before, q:after {
-//   content: '';
-//   content: none;
-// }
-// table {
-//   border-collapse: collapse;
-//   border-spacing: 0;
-// }
+// Created on : May 15, 2018, 8:41:37 PM
+// Author     : Ridhaa Cupido
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+// Using Eric Meyer's reset for cross-browser uniformity
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 /*Styles for entire body*/
 body{
-    background-color: #ccc; /*Light grey background color*/
-    margin: 0 auto;
-    font-family: 'Raleway', sans-serif;
+  background-color: #ccc; /*Light grey background color*/
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
 }
-/*Centering and sizing header*/
+/*Centering and sizing the largest heading elements*/
 h1{
-    text-align: center;
+  font-size: 3em;
+  text-align: center;
+  text-shadow: 2px 2px grey;
 }
 
 .mainArticle p{
-    font-size: 1.2em;
-    padding: 10px;
-    border-top:1px solid black;
-    border-bottom:1px solid black;
-    color: white;
-    background: url("../images/Koala.jpg");
-    background-size: cover;
-    animation-name: slideShow;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    filter:contrast(120%);
-    animation-timing-function: linear;
+  font-size: 1.2em;
+  padding: 10px;
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+  color: white;
+  background: url("../images/camping2.jpg");
+  background-size: cover;
+  animation-name: slideShow;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  filter:contrast(120%);
+  animation-timing-function: linear;
 
 }
 @keyframes slideShow{
-    0%{background: url("../images/camping1.jpg");background-size: cover;color:white}
-    10%{background: url("../images/camping2.jpg");background-size: cover;color:black;}
-    20%{background: url("../images/camping3.jpg");background-size: cover;}
-    30%{background: url("../images/hiking1.jpg");background-size: cover;color:white;}
-    40%{background: url("../images/hiking3.jpg");background-size: cover;}
-    50%{background: url("../images/Lighthouse.jpg");background-size: cover;color:black;}
-    60%{background: url("../images/Penguins.jpg");background-size: cover;}
-    70%{background: url("../images/Tulips.jpg");background-size: cover;}
+  0%{background: url("../images/camping2.jpg");background-size: cover;color:white}
+  10%{background: url("../images/camping2.jpg");background-size: cover;color:black;}
+  20%{background: url("../images/camping3.jpg");background-size: cover;}
+  30%{background: url("../images/hiking1.jpg");background-size: cover;color:white;}
+  40%{background: url("../images/hiking3.jpg");background-size: cover;}
+  50%{background: url("../images/fishing1.jpg");background-size: cover;color:black;}
+  60%{background: url("../images/hiking5.jpg");background-size: cover;}
+  70%{background: url("../images/fishing2.jpg");background-size: cover;}
 }
 
 /*Main container starts here*/
 .mainContainer{
-    display: grid;
-    grid-template-columns:auto auto;
+  display: grid;
+  grid-template-columns:120px auto;
+}
+
+
+// Code for dropdown button
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: #000;
+  font-family: inherit;
+  border-radius: 0px 20px 20px 0px;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 20;
+  margin-bottom: 30px;
+  a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: left;
+    float: left;
+  }
+}
+
+.show {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:1fr 1fr 1fr;
+  z-index: 40;
 }
 
 
 /*Styles for navbar starts here*/
-.navBar ul{
-/*    border:1px solid black;*/
-    padding: 0;
-    display: grid;
-    grid-template-columns:1fr;
-    grid-template-rows:auto auto auto;
-    list-style-type: none;
- position: sticky;
- top:0;
- overflow: hidden;
- z-index: 10;
-
-
-    height: 300px;
+.navbar{
+  grid-column: 1/8;
 }
-.navBar ul li{
-
-}
-.navBar ul li a{
-padding: 10px;
+.navBar{ul{
+  /*    border:1px solid black;*/
+  position: sticky;
+  top:0;
+  overflow: hidden;
+  z-index: 10;
+  padding: 0;
+  display: grid;
+  grid-template-columns:1fr;
+  grid-template-rows:auto auto auto;
+  list-style-type: none;
+  li a{
+    padding: 10px;
     text-decoration: none;
     background-color: black;
     color:white;
     border-radius: 0 20px 20px 0px;
 
-}
-.campingSection{
-    grid-column:2/3;
-    width: 100%;
-}
-figure img{
+  }
+
+
+  height: 300px;
+}}
+.campingSection, .hikingSection, .fishingSection, .climbingSection{
+  grid-column:2/3;
   width: 100%;
 }
+figure{
+  img{
+    border-radius: 12px;
+    width: 100%;
+  }
+  img:hover{
+    filter: brightness(80%);
+  }
+}
+
+.campingSection, .fishingSection{
+  p{
+    margin:12px;
+  }
+}
 
 
+footer{
+  width: 100%;
 
-
-
+  p{
+    background-color: #000;
+    padding: 10px;
+    color: white;
+    border-radius: 12px;
+  }
+}
 
 
 
@@ -157,69 +211,94 @@ figure img{
 
 /*Responsive for large phones and small tablets*/
 @media screen and (min-width:420){
-    body{
-        margin-left: 10%;
-        margin-right: 10%;
-    }
+  body{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 /*Responsive for desktop*/
 @media screen and (min-width:1600px){
-    body{
-        margin-left: 20%;
-        margin-right: 20%;
+  body{
+    margin-left: 20%;
+    margin-right: 20%;
 
-    }
+  }
 
 }
 
 /*Responsive for tablets*/
 @media screen and (min-width:800px){
-    body{
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    .navBar{
-        position: sticky;
- top:0;
- overflow: hidden;
- z-index: 10;
-    }
-    .navBar ul{
-/*    border:1px solid black;*/
+  body{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  // dropdown button
+  .show {
+    display: inline;
+  }
+  .navBar{
+    position: sticky;
+    top:0;
+    overflow: hidden;
+    z-index: 10;
+    border-radius: 12px;
+  }
+  .dropdown .dropbtn{
+    border-radius: 0px;
+  }
+
+
+
+
+  .navBar ul{
+    /*    border:1px solid black;*/
     padding: 0;
     display: grid;
     grid-template-columns:auto auto auto auto auto;
     grid-template-rows:50px;
     list-style-type: none;
 
-margin: 0;
-padding: 0;
-}
-.navBar ul li{
+    margin: 0;
+    padding: 0;
+  }
+  .navBar ul li{
 
     margin: 10 auto;
     background-color: black;
-}
-.navBar ul li a{
+  }
+  .navBar ul li a{
 
     line-height: 50px;
-}
+  }
 
-.mainContainer{
+  .mainContainer{
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
-    grid-template-rows:50px auto auto auto;
+    grid-template-rows:50px auto auto auto auto auto auto auto;
     grid-gap:10px;
-}
-.activityLinks{
+  }
+  .activityLinks{
+
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 10;
     grid-column:4/5;
-    grid-row:2/6;
-}
-.navBar{
+    grid-row:2/9;
+  }
+  .navBar{
     grid-column:1/5;
-}
-.campingSection {
-  border: 1px solid black;
-  grid-column: 1/4;
- }
+  }
+
+  .campingSection,.fishingSection, .hikingSection, .climbingSection {
+    h1{
+      margin-top: 60px;
+    }
+    p{
+      padding: 20px;
+
+    }
+    border: 1px solid black;
+    grid-column: 1/4;
+  }
 }

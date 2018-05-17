@@ -26,7 +26,19 @@ and open the template in the editor.
                 <ul>
                     <li></li>
                     <li><a href="">Home</a></li>
-                    <li><a href="">Categories</a></li>
+                  <li>  <div class="dropdown">
+          <button class="dropbtn" onclick="dropsDown()">Categories
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="#">Hiking</a>
+            <a href="#">Camping</a>
+            <a href="#">Fishing</a>
+            <a href="#">Rock-climbing</a>
+          </div>
+          <div>
+          </li>
+
+          <script src="js/dropdown.js"></script>
                     <li><a href="">Gallery</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
@@ -36,13 +48,13 @@ and open the template in the editor.
 
 
             <section class="activityLinks">
-                <figure><img src="images/hiking1.jpg" width="100%"><figcaption>Hiking</figcaption></figure>
-                <figure><img src="images/camping1.jpg" width="100%"><figcaption>Camping</figcaption></figure>
-                <figure><img src="images/fishing1.jpg" width="100%"><figcaption>Fishing</figcaption></figure>
-                <figure><img src="images/climbing1.jpg" width="100%"><figcaption>Rock-climbing</figcaption></figure>
+              <a href="#hiking"><figure><img src="images/hiking1.jpg" width="100%"><figcaption></figcaption></figure>Hiking  </a>
+                <figure><img src="images/camping1.jpg" width="100%"><figcaption><a href="#camping">Camping</a></figcaption></figure>
+                <figure><img src="images/fishing1.jpg" width="100%"><figcaption><a href="#fishing">Fishing</a></figcaption></figure>
+                <figure><img src="images/climbing1.jpg" width="100%"><figcaption><a href="#climbing">Rock-climbing</a></figcaption></figure>
             </section>
 
-            <section class="campingSection">
+            <section class="hikingSection" id="hiking">
               <article class="mainHeading">
                 <h1>Hiking</h1>
                 <p>People of all ages enjoy hiking because it strengthens friendships, allows you to get closer Cape Town's diverse natural environment and offers an escape from the daily grind. On your doorstep there may well be more walking and hiking routes than in any other place in the world from tough hikes to Sunday afternoon strolls and from seaside walks to urban adventures. Grab your hiking boots, a bottle of water and the rest of the family to embark on a cheap and healthy hike in Cape Town and Surrounds.</p>
@@ -101,7 +113,181 @@ and open the template in the editor.
                   </figure>
                   </section>
                 </section>
+
+                <section class="campingSection" id="camping">
+                  <article class="mainHeading">
+                    <h1>Camping</h1>
+                    <p>It’s tent-pitching season. Here are some awesome spots to do it in the Cape.
+
+        Whether you’re looking for back-to-basics beauty, a fun family getaway, or a romantic retreat, we’ve got you covered with our picks of campsites in the Cape. As always, if we’ve left any of your favourites out, please let us know in the comments…</p>
+                  </article>
+
+                <section class="subsection">
+
+
+                  <figure>
+
+                      <img src="images/camping1.jpg" alt="">
+                      <figcaption>1- Secret Falls Roughly 100 kilometres from Cape Town lies this tranquil campsite tucked in the Winterhoek Mountains. Here, there’s no shortage of peace, quiet and spectacular views.
+                      This campsite has it’s own private spring-water swimming pool, so there’s loads of dipping to be had. Expect an abundance of fynbos, hiking trails, waterfalls and rockpools. And if you’re adventurous enough, go ziplining in nearby Ceres.</figcaption>
+                    </figure>
+
+
+                    <figure>
+
+                        <img src="images/camping2.jpg" alt="">
+                        <figcaption>2- Berverlac Tucked away in the Groot Winterhoek Mountains above Porterville, this charming no-fuss campsite epitomises the great outdoors in all its rugged majesty.
+                        Enjoy a wide variety of dog-friendly hiking trails up the Groot Winterhoek Mountains followed by a dip in one of the rockpools and waterfalls. You might even stumble upon some of the area’s famed rock art. There are also some great mountain-biking trails for  intrepid travellers.  </figcaption>
+                      </figure>
+
+                      <figure>
+
+                <img src="images/camping3.jpg" alt="">
+                <figcaption>3 –  DRIEHOEK GUEST FARM
+                  A working farm set among the mountains and rivers of the Cederberg. The region provides the ultimate escape from city life and, while the farm is a treasure in its own right, it also serves as a perfect base for exploring what is one of the country’s most hauntingly beautiful landscapes.Explore the Cederberg on one of the farm’s many walking trails, passing by rock formations, waterfalls and natural pools where you can enjoy a refreshing dip. Hardier types will want to test their stamina on some of the hiking trails that run throughout the surrounding mountains, while kids will enjoy hanging out with Driehoek’s assortment of amicable farm animals.</figcaption>
+                      </figure>
+
+                      <figure>
+
+                <img src="images/camping4.jpg" alt="">
+                <figcaption>4 – BONTEBOK NATIONAL PARK
+              Located on the banks of the Breede River near Swellendam, the Elsie’s Kraal rest camp offers stunning views of the river and the Langeberg Mountains. Under the majestic backdrop of the Langeberg Mountains, visitors can enjoy swimming, river-rafting, fishing, bird-watching, and mountain hiking trails. With a maximum of six people per camping site, friends and family can enjoy picnics and braais in good company.
+
+                </figcaption>
+                      </figure>
+
+                      <figure>
+
+                        <img src="images/camping5.jpg" alt="">
+                        <figcaption>5 – THE BATHS NATURAL HOT SPRINGS RESORT
+              Just outside Citrusdal in the scenic Olifants River Valley, this rustic resort dating back to 1739 provides campers with the ultimate relaxing escape. Enjoy the various hiking trails with views of Olifants River Valley, explore the town or chill at the campsite where there is a small onsite playground for children, a trampoline and tennis court. With natural hot springs, this campsite is all about relaxed outdoor living. </figcaption>
+                      </figure>
+                      </section>
+</section>
+
+                      <!-- Fishing section -->
+                      <section class="fishingSection" id="fishing">
+                        <h1>Fishing</h1>
+                        <p>Fishing is a relaxing and enjoyable activity and can be an opportunity to teach children about nature.  Bring the whole family and enjoy a braai or picnic. Here are a few child-friendly catch and release fishing spots in Cape Town, each offers fishing and loads of other activities and fun things to do.</p>
+                      </article>
+
+                      <section class="subsection">
+
+
+                        <figure>
+
+                            <img src="images/fishing1.jpg" alt="">
+                            <figcaption>1- La Lancha can be found on The Klein Bottelary Farm on Bottelary Road in Cape Town. Bring the family and enjoy the Cape Winelands with a picnic and some fishing, they also have braai facilities on request. The Fischer Haven Dam is famous for its Bass fishing and there are a few good places to fish along the dam including some jetties. Children are welcome to come along and fish as long as they are supervised.
+
+              There is a small fee to fish for the day or you can join their membership and come and enjoy the fishing on a regular basis. La Lancha also offers great entertainment including, drumming, fire dancing, outdoor movies and a number of local music and theatre productions. Their family restaurant offers great food and the facilities can be hired for functions.
+
+              </figcaption>
+                          </figure>
+
+
+                          <figure>
+
+                              <img src="images/fishing2.jpg" alt="">
+                              <figcaption>2 -Stream X fly Fishing Fly fish the Western Cape's pristine streams, filled with lovely rainbow and brown trout, and in breathtaking scenery. If streams aren't your thing we have beautiful still waters with large rainbow trout or bass.
+
+The salt water fly fishermen can chose between challenging surf conditions on reefs or flat calm conditions in estuaries, targeting elf (bluefish), garrick or guitarfish. The brave can tackle the cape sailfish (snoek), yellowtail or tuna offshore.
+
+StreamX will facilitate your trip, ensure you have a pleasant guided experience & provide the equipment you need. We also have well stocked fly-fishing shop twenty minutes from the centre of Cape Town.
+
+PLEASE  </figcaption>
+                            </figure>
+
+                            <figure>
+
+                      <img src="images/fishing3.jpg" alt="">
+                      <figcaption>3 –  Awesome Charters
+                        Experience angling at the southern most tip of Africa with Awesome Charters, a saltwater fishing charter, based in Struisbaai. Based in the Struisbaai harbour, this professional charter company offers an array of tailored experiences to suit your pocket.
+
+Using a 28ft cat powered by two 140HP Suzuki engines as well as a second boat, a 26ft cat powered by twin 115 Suzuki outboards, the charter offers space for groups of up to 10 anglers. The boats are checked regularly by Marine Coastal Management to ensure a safe fishing charter experience. Some of the charter options include; 6 Hours of deep sea; 3 Hours afternoon fishing charter; sundowner cruises and pleasure trips.
+
+Try your hand at catching big game fish like yellowtail, steenbras, black and striped marlin and hammerhead with a crew boasting over 50 years experience. With their child-friendly policy and champagne sunset cruises on offer, chartering a boat with Awesome Charters is the perfect experience for the whole family.</figcaption>
+                            </figure>
+
+                            <figure>
+
+                      <img src="images/fishing4.jpg" alt="">
+                      <figcaption>4 - Witsrand
+                        A visit to The Breede River Lodge in Witsand wouldn’t be complete without guests taking advantage of the wonderful fishing and boating facilities, and ideal conditions for kite surfing, traditional surfing, and other water sports.
+
+Enjoy a day’s fishing, or simply cruise around past the historic Infanta holiday village, onto one of the oldest lighthouses along the coast, all the time in winter dodging those whales. Learn about the local seabird population, fishing resources and those whales. Refreshments are provided, but you will be back well in time for lunch, or supper, should the weather allow an afternoon trip. Top skipper, refreshments and bait included!
+
+
+
+
+                      </figcaption>
+                            </figure>
+
+                            <figure>
+
+                              <img src="images/fishing5.jpg" alt="">
+                              <figcaption>5 – Langebaan
+                              Fly Fish Cape Town takes advantage of the excellent fresh water and salt water conditions that are in and around the Mother City. This company was established by accomplished fly fisherman, Graeme Field, who is also an international fly fishing guide and freelance journalist and photographer. He shares his experience and knowledge with locals and visitors from all corners of the world, showcasing the abundance of the Western Cape. Whether you have years of fly fishing experience behind you, or you simply want to try your hand at something new, Fly Fish Cape Town will cater to your time frames and requirements. </figcaption>
+                            </figure>
+                            </section>
+                      </section>
+
+
+                      <section class="climbingSection" id="climbing">
+                        <article class="mainHeading">
+                          <h1>Rock-climbing</h1>
+                          <p>
+The Cape is full of mountains and provides a mecca of climbing. Cape Town being the main center is a good base to start from. There are a few clubs mainly the MCSA Cape Town Section which has over 1200 members and a bouldering wall in their club room. The University also has a good bouldering wall and there is a climbing gym in Cape Town too. Good climbing is only a few minutes drive from Cape Town and the furthermost areas about 4-5 hours away.</p>
+                        </article>
+
+<section class="subsection">
+  <figure>
+
+      <img src="images/fishing1.jpg" alt="">
+      <figcaption>1- La Lancha can be found on The Klein Bottelary Farm on Bottelary Road in Cape Town. Bring the family and enjoy the Cape Winelands with a picnic and some fishing, they also have braai facilities on request. The Fischer Haven Dam is famous for its Bass fishing and there are a few good places to fish along the dam including some jetties. Children are welcome to come along and fish as long as they are supervised.
+
+  There is a small fee to fish for the day or you can join their membership and come and enjoy the fishing on a regular basis. La Lancha also offers great entertainment including, drumming, fire dancing, outdoor movies and a number of local music and theatre productions. Their family restaurant offers great food and the facilities can be hired for functions.
+
+  </figcaption>
+    </figure>
+
+
+    <figure>
+
+        <img src="images/camping2.jpg" alt="">
+        <figcaption>2- Berverlac Tucked away in the Groot Winterhoek Mountains above Porterville, this charming no-fuss campsite epitomises the great outdoors in all its rugged majesty.
+        Enjoy a wide variety of dog-friendly hiking trails up the Groot Winterhoek Mountains followed by a dip in one of the rockpools and waterfalls. You might even stumble upon some of the area’s famed rock art. There are also some great mountain-biking trails for  intrepid travellers.  </figcaption>
+      </figure>
+
+      <figure>
+
+  <img src="images/camping3.jpg" alt="">
+  <figcaption>3 –  DRIEHOEK GUEST FARM
+  A working farm set among the mountains and rivers of the Cederberg. The region provides the ultimate escape from city life and, while the farm is a treasure in its own right, it also serves as a perfect base for exploring what is one of the country’s most hauntingly beautiful landscapes.Explore the Cederberg on one of the farm’s many walking trails, passing by rock formations, waterfalls and natural pools where you can enjoy a refreshing dip. Hardier types will want to test their stamina on some of the hiking trails that run throughout the surrounding mountains, while kids will enjoy hanging out with Driehoek’s assortment of amicable farm animals.</figcaption>
+      </figure>
+
+      <figure>
+
+  <img src="images/camping4.jpg" alt="">
+  <figcaption>4 – BONTEBOK NATIONAL PARK
+  Located on the banks of the Breede River near Swellendam, the Elsie’s Kraal rest camp offers stunning views of the river and the Langeberg Mountains. Under the majestic backdrop of the Langeberg Mountains, visitors can enjoy swimming, river-rafting, fishing, bird-watching, and mountain hiking trails. With a maximum of six people per camping site, friends and family can enjoy picnics and braais in good company.
+
+  </figcaption>
+      </figure>
+
+      <figure>
+
+        <img src="images/hiking5.jpg" alt="">
+        <figcaption>5 – THE BATHS NATURAL HOT SPRINGS RESORT
+  Just outside Citrusdal in the scenic Olifants River Valley, this rustic resort dating back to 1739 provides campers with the ultimate relaxing escape. Enjoy the various hiking trails with views of Olifants River Valley, explore the town or chill at the campsite where there is a small onsite playground for children, a trampoline and tennis court. With natural hot springs, this campsite is all about relaxed outdoor living. </figcaption>
+      </figure>
+</section>
+
+                      </section>
         </div>
+
+        <footer>
+          <p>Outdoor Adventures © 2018. All rights reserved. Use of this site constitutes acceptance of our Privacy Policy and Disclaimer. Made by Ridhaa Cupido</p>
+        </footer>
 
 
 
