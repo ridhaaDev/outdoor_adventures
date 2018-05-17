@@ -1,3 +1,6 @@
+body {
+  background-color: #ccc; }
+
 form {
   display: grid;
   grid-template-rows: repeat(6, 50px);
@@ -7,6 +10,16 @@ form {
 
 h1 {
   text-align: center; }
+  h1 a {
+    text-decoration: none; }
+
+#home {
+  grid-column: 1/2;
+  float: left; }
+
+#gallery {
+  grid-column: 2/3;
+  float: right; }
 
 form input, select, textarea, button {
   border-radius: 12px;
@@ -34,6 +47,7 @@ form input:focus, select:focus, textarea:focus, button:focus {
   grid-area: comments; }
 
 #submit {
+  cursor: pointer;
   grid-area: button;
   background: linear-gradient(to right, #3333cc, #000066);
   color: white;
