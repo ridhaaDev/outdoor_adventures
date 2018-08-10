@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Contact Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="css/Contact.css">
-  </head>
-  <body>
-    <h1>
-      <button id="home" type="button" name="button"><a href="outdoor_adventures.html">Home</a></button>
-      Contact
-  <button id="gallery" type="button" name="button"><a href="gallery.html">Gallery</a></button>
-    </h1>
-    <form class="contactForm" action="" method="post">
-      <input type="text" name="" value="" id="name" placeholder="Enter name...">
-      <input type="text" name="" value="" id="surname" placeholder="Enter surname...">
-
-      <input type="email" name="" value="" id="email" placeholder="yourname@gmail.com">
-
-      <select class="" name="" id="category">
-        <option value="">Which category did you like the most?</option>
-        <option value="">Hiking</option>
-        <option value="">Camping</option>
-        <option value="">Fishing</option>
-        <option value="">Rock-climbing</option>
-      </select>
-
-      <textarea name="name" rows="8" cols="60" placeholder="Comments? Drop them here..." id="comments"></textarea>
-
-      <button type="submit" name="button" id="submit">Submit</button>
-    </form>
-
-  </body>
+   <head>
+      <meta charset="utf-8">
+      <title>Form Validation Challenge</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/styles.css">
+      <style media="screen">
+      </style>
+   </head>
+   <body>
+      <div class="contactContainer">
+         <h1>
+            <button id="homeLink" type="button" name="button"><a href="index.html"><i class="fa fa-arrow-circle-left" style="font-size:24px">Home</i></a></button>
+            Contact
+            <button id="gallery" type="button" name="button"><a href="gallery.html">Gallery<i class="fa fa-arrow-circle-right" style="font-size:24px"></i></a></button>
+         </h1>
+         <form class="contactForm" action="" method="post">
+            <input type="text" name="" value="" id="name" placeholder="Enter name...">
+            <input type="text" name="" value="" id="surname" placeholder="Enter surname...">
+            <input type="email" name="" value="" id="email" placeholder="yourname@gmail.com">
+            <select class="" name="" id="category">
+               <option value="">Which category did you like the most?</option>
+               <option value="">Hiking</option>
+               <option value="">Camping</option>
+               <option value="">Fishing</option>
+               <option value="">Rock-climbing</option>
+            </select>
+            <textarea name="name" rows="8" cols="60" placeholder="Comments? Drop them here..." id="comments"></textarea>
+            <button type="submit" name="button" id="submit">Submit</button>
+         </form>
+      </div>
+   </body>
 </html>

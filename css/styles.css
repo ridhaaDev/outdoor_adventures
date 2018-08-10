@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond");
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  text-align: center; }
+
+body {
+  margin: 0 10px; }
+
+h1 {
+  background-color: #ccc;
+  font-size: 3em;
+  font-family: 'Raleway', sans-serif; }
+
+img {
+  border: 1px solid black;
+  width: 100%; }
+
+img:hover {
+  filter: brightness(80%); }
+
+a {
+  text-decoration: none; }
+
+.mainArticle p {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  font-size: 1.5em;
+  padding: 20px; }
+
+.navBar {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  z-index: 20; }
+  .navBar ul {
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto; }
+    .navBar ul li {
+      margin: 10px 0; }
+      .navBar ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 8px 20px;
+        background-color: black;
+        border-radius: 5px; }
+
+.navBar ul li {
+  margin: 10 auto; }
+  .navBar ul li a {
+    font-size: 15px; }
+  .navBar ul li a:hover {
+    background-color: #ccc;
+    color: black;
+    transition: 1s ease; }
+
+figcaption {
+  font-size: 20px;
+  font-family: 'EB Garamond', serif; }
+
+.activityLinks a {
+  text-decoration: none;
+  color: black; }
+  .activityLinks a figure img {
+    width: 90%; }
+
+.slideShow {
+  background: url("../images/camping1.jpg");
+  background-size: cover;
+  animation-name: slideShow;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  height: 425px;
+  width: 100%;
+  border: 1px solid black;
+  grid-column: 1/4;
+  border-radius: 12px; }
+
+@keyframes slideShow {
+  0% {
+    background: url("../images/camping3.jpg");
+    background-size: cover; }
+  10% {
+    background: url("../images/camping2.jpg");
+    background-size: cover; }
+  20% {
+    background: url("../images/camping3.jpg");
+    background-size: cover; }
+  30% {
+    background: url("../images/camping4.jpg");
+    background-size: cover; }
+  40% {
+    background: url("../images/camping5.jpg");
+    background-size: cover; } }
+.campingSection h1, .fishingSection h1, .hikingSection h1, .climbingSection h1 {
+  padding-top: 50px; }
+
+footer {
+  padding: 10px;
+  font-size: 20px;
+  background-color: black;
+  color: white; }
+
+/*Responsive for large phones and small tablets*/
+@media screen and (min-width: 420) {
+  body {
+    margin-left: 10%;
+    margin-right: 10%; } }
+/*Responsive for desktop*/
+@media screen and (min-width: 1600px) {
+  body {
+    margin-left: 20%;
+    margin-right: 20%; } }
+/*Responsive for tablets*/
+@media screen and (min-width: 800px) {
+  body {
+    margin-left: 10%;
+    margin-right: 10%; }
+
+  .navBar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 10;
+    height: 40px;
+    margin-top: 10px; }
+
+  .dropdown .dropbtn {
+    border-radius: 0px; }
+
+  .navBar ul {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 80px;
+    list-style-type: none;
+    z-index: 11;
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+    background-color: black;
+    opacity: 0.7; }
+
+  .mainContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px auto auto auto auto auto auto auto;
+    grid-gap: 10px; }
+
+  .activityLinks {
+    position: sticky;
+    top: 40px;
+    overflow: hidden;
+    height: 1000px;
+    background-color: #ccc;
+    padding: 20px;
+    grid-column: 4/5;
+    grid-row: 2/9; }
+    .activityLinks a {
+      text-decoration: none;
+      color: black; }
+      .activityLinks a img {
+        border-radius: 12px; }
+
+  .navBar {
+    grid-column: 1/5; }
+
+  .navBar ul li {
+    margin: 10 auto; }
+    .navBar ul li a {
+      font-size: 18px; }
+    .navBar ul li a:hover {
+      background-color: #ccc;
+      color: black;
+      transition: 1s ease; }
+
+  .campingSection, .fishingSection, .hikingSection, .climbingSection {
+    grid-column: 1/4; }
+
+  .campingSection h1, .fishingSection h1, .hikingSection h1, .climbingSection h1 {
+    margin-top: 40px; }
+
+  .campingSection p, .fishingSection p, .hikingSection p, .climbingSection p {
+    border: 1px solid black;
+    box-shadow: 5px 10px 8px #888888;
+    z-index: 10;
+    padding: 50px;
+    font-size: 20px;
+    margin-bottom: 10px; } }
+.subsection figure figcaption p {
+  border: 1px solid black;
+  padding: 50px;
+  font-size: 20px; }
+
+.contactForm {
+  display: grid;
+  grid-template-rows: repeat(6, 50px);
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "name surname" "email email" "category category" "comments comments" "comments comments" "button button";
+  grid-gap: 10px; }
+
+#homeLink {
+  grid-column: 1/2;
+  float: left; }
+
+#gallery {
+  grid-column: 3/4;
+  float: right; }
+
+form input, select, textarea, button {
+  border-radius: 12px;
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid grey; }
+
+form input:focus, select:focus, textarea:focus, button:focus {
+  outline: none;
+  border-color: red; }
+
+#name {
+  grid-area: name; }
+
+#surname {
+  grid-area: surname; }
+
+#email {
+  grid-area: email; }
+
+#category {
+  grid-area: category; }
+
+#comments {
+  grid-area: comments; }
+
+h1 {
+  background-color: #ccc; }
+
+#submit {
+  cursor: pointer;
+  grid-area: button;
+  background: linear-gradient(to right, #ccc, #000);
+  color: white;
+  border: none; }
+
+#submit:hover {
+  grid-area: button;
+  background: linear-gradient(to right, #000, #ccc); }
+
+@media screen and (min-width: 650px) {
+  .contactContainer {
+    margin: 0 10%; } }
+@media screen and (min-width: 900px) {
+  .contactContainer {
+    margin: 0 20%; } }
+@media screen and (min-width: 1300px) {
+  .contactContainer {
+    margin: 0 30%; } }
+.galleryContainer .container {
+  position: relative;
+  width: 50%; }
+.galleryContainer .image {
+  box-shadow: 5px 10px 8px #888888;
+  display: block;
+  width: 200%;
+  height: auto; }
+.galleryContainer .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  width: 200%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  transition: .3s ease; }
+.galleryContainer .container:hover .overlay {
+  transform: scale(1); }
+.galleryContainer .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center; }
+
+@media screen and (min-width: 800px) {
+  .galleryContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px; }
+    .galleryContainer img {
+      width: 100%;
+      height: 100%; }
+
+  .galleryHeader {
+    grid-column: 1/3; } }
+@media screen and (min-width: 1200px) {
+  .galleryContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
+
+  .galleryHeader {
+    grid-column: 1/6; } }
+
+/*# sourceMappingURL=styles.css.map */

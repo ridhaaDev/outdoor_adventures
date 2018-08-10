@@ -1,63 +1,142 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Gallery Page</title>
+   <head>
+      <meta charset="utf-8">
+      <title>Gallery</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/Gallery.css">
-  </head>
-  <body>
-    <h1>
-      <button id="home" type="button" name="button"><a href="outdoor_adventures.html">Home</a></button>
-      Gallery
-      <button id="contact" type="button" name="button"><a href="Contact.html"> Contact</a></button>
-    </h1>
-    <figure><a href="images/hiking1.jpg"><img src="images/hiking1.jpg" ></a><figcaption>Lions head</figcaption></figure>
-
-    <figure><a href="images/hiking2.jpg"><img src="images/hiking2.jpg" ></a><figcaption>Table Mountain</figcaption></figure>
-
-    <figure><a href="images/hiking3.jpg"><img src="images/hiking3.jpg" ></a><figcaption>Chapmans Peak</figcaption></figure>
-
-<figure><a href="images/hiking4.jpg"><img src="images/hiking4.jpg" ></a><figcaption>Cape Point</figcaption></figure>
-
-<figure><a href="images/hiking5.jpg"><img src="images/hiking5.jpg" ></a><figcaption>Kirstenbosch</figcaption></figure>
-
-
-<!-- fdasfd -->
-<figure><a href="images/camping1.jpg"><img src="images/camping1.jpg" ></a><figcaption>Secret fall</figcaption></figure>
-
-<figure><a href="images/camping2.jpg"><img src="images/camping2.jpg" ></a><figcaption>Beverlac</figcaption></figure>
-
-<figure><a href="images/camping3.jpg"><img src="images/camping3.jpg" ></a><figcaption>Driehoek Guest Farm</figcaption></figure>
-
-<figure><a href="images/camping4.jpg"><img src="images/camping4.jpg" ></a><figcaption>Bondebok National Park</figcaption></figure>
-
-<figure><a href="images/camping5.jpg"><img src="images/camping5.jpg" ></a><figcaption>Baths National Resort</figcaption></figure>
-
-
-<!-- Fishing images -->
-<figure><a href="images/fishing1.jpg"><img src="images/fishing1.jpg" ></a><figcaption>La Lancha</figcaption></figure>
-
-<figure><a href="images/fishing2.jpg"><img src="images/fishing2.jpg" ></a><figcaption>Steam X fly-fishing</figcaption></figure>
-
-<figure><a href="images/fishing3.jpg"><img src="images/fishing3.jpg" ></a><figcaption>Awesome Charters</figcaption></figure>
-
-<figure><a href="images/fishing4.jpg"><img src="images/fishing4.jpg" ></a><figcaption>Witsrand</figcaption></figure>
-
-<figure><a href="images/fishing5.jpg"><img src="images/climbing1.jpg" ></a><figcaption>Langebaan</figcaption></figure>
-
-
-<!-- Rock climbing images-->
-<figure><a href="images/climbing1.jpg"><img src="images/climbing1.jpg" ></a><figcaption>Table Mountain</figcaption></figure>
-
-  <figure><a href="images/climbing2.jpg"><img src="images/climbing2.jpg" ></a><figcaption>Table Mountain</figcaption></figure>
-
-  <figure><a href="images/climbing3.jpg"><img src="images/climbing3.jpg" ></a><figcaption>Table Mountain</figcaption></figure>
-
-  <figure><a href="images/climbing4.jpg"><img src="images/climbing4.jpg" ></a><figcaption>Table Mountain</figcaption></figure>
-
-  <figure><a href="images/climbing5.jpg"><img src="images/climbing5.jpg" ></a><figcaption>Table Mountain</figcaption></figure>
-
-
-  </body>
+      <link rel="stylesheet" href="css/styles.css">
+   </head>
+   <body>
+      <div class="galleryContainer">
+         <h1 class="galleryHeader">
+            <button id="homeLink" type="button" name="button"><a href="index.html"><i class="fa fa-arrow-circle-left" style="font-size:24px">Home</i></a></button>
+            Gallery
+            <button id="gallery" type="button" name="button"><a href="contact.html">Contact<i class="fa fa-arrow-circle-right" style="font-size:24px"></i></a></button>
+         </h1>
+         <div class="container">
+            <img src="images/hiking1.jpg" alt="Avatar" class="image" >
+            <div class="overlay">
+               <div class="text">Lions head</div>
+            </div>
+         </div>
+         <div class="container">
+            <img src="images/hiking2.jpg" alt="Avatar" class="image" >
+            <div class="overlay">
+               <div class="text">Table Mountain</div>
+            </div>
+         </div>
+         <div class="container">
+            <img src="images/hiking3.jpg" alt="Avatar" class="image" >
+            <div class="overlay">
+               <div class="text">Chapmans Peak</div>
+            </div>
+         </div>
+         <div class="container">
+            <img src="images/hiking4.jpg" alt="Avatar" class="image" >
+            <div class="overlay">
+               <div class="text">Cape Point</div>
+            </div>
+         </div>
+         <div class="container">
+            <img src="images/hiking5.jpg" alt="Avatar" class="image" >
+            <div class="overlay">
+               <div class="text">Kirstenbosch</div>
+            </div>
+         </div>
+         <!-- camping section -->
+         <div class="container">
+            <img src="images/camping1.jpg" alt="Avatar" class="image" >
+            <div class="overlay">
+               <div class="text">Secret fall</div>
+            </div>
+         </div>
+         <div class="container">
+            <img src="images/camping2.jpg" alt="Avatar" class="image" >
+            <div class="overlay">
+               <div class="text">Beverlac</div>
+            </div>
+         </div>
+         <div class="container">
+            <img src="images/camping3.jpg" alt="Avatar" class="image" >
+            <div class="overlay">
+               <div class="text">Bondebok National Park</div>
+            </div>
+         </div>
+         <div class="container">
+            <img src="images/camping4.jpg" alt="Avatar" class="image" >
+            <div class="overlay">
+               <div class="text">Driehoek Guest Farm</div>
+            </div>
+         </div>
+         <div class="container">
+            <img src="images/camping5.jpg" alt="Avatar" class="image" >
+            <div class="overlay">
+               <div class="text">Baths National Resort</div>
+            </div>
+         </div>
+         <!-- Fishing images -->
+         <div class="container">
+            <img src="images/fishing1.jpg" alt="Avatar" class="image" >
+            <div class="overlay">
+               <div class="text">La Lancha</div>
+            </div>
+         </div>
+         <div class="container">
+            <img src="images/fishing2.jpg" alt="Avatar" class="image" >
+            <div class="overlay">
+               <div class="text">Steam X fly-fishing</div>
+            </div>
+         </div>
+         <div class="container">
+            <img src="images/fishing3.jpg" alt="Avatar" class="image" >
+            <div class="overlay">
+               <div class="text">Awesome Charters</div>
+            </div>
+         </div>
+         <div class="container">
+            <img src="images/fishing4.jpg" alt="Avatar" class="image" >
+            <div class="overlay">
+               <div class="text">Witsrand</div>
+            </div>
+         </div>
+         <div class="container">
+            <img src="images/fishing5.jpg" alt="Avatar" class="image" >
+            <div class="overlay">
+               <div class="text">Langebaan</div>
+            </div>
+         </div>
+         <!-- Rock climbing images-->
+         <div class="container">
+            <img src="images/climbing1.jpg" alt="Avatar" class="image" >
+            <div class="overlay">
+               <div class="text">Table Mountain</div>
+            </div>
+         </div>
+         <div class="container">
+            <img src="images/climbing2.jpg" alt="Avatar" class="image" >
+            <div class="overlay">
+               <div class="text">Table Mountain</div>
+            </div>
+         </div>
+         <div class="container">
+            <img src="images/climbing3.jpg" alt="Avatar" class="image" >
+            <div class="overlay">
+               <div class="text">Table Mountain</div>
+            </div>
+         </div>
+         <div class="container">
+            <img src="images/climbing4.jpg" alt="Avatar" class="image" >
+            <div class="overlay">
+               <div class="text">Table Mountain</div>
+            </div>
+         </div>
+         <div class="container">
+            <img src="images/climbing5.jpg" alt="Avatar" class="image" >
+            <div class="overlay">
+               <div class="text">Table Mountain</div>
+            </div>
+         </div>
+      </div>
+   </body>
 </html>
